@@ -29,10 +29,22 @@ project-image {
   border-radius: 10px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
-.about-intro {
+
+/* About Section Layout */
+.about-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0 30px;
 }
 
 .profile-photo {
@@ -43,4 +55,20 @@ project-image {
   object-position: center;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(16, 36, 58, 0.15);
+}
+
+.about-text {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-text .lead {
+  font-size: 1.08rem;
+  font-weight: 500;
 }
