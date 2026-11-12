@@ -72,3 +72,27 @@ project-image {
   font-size: 1.08rem;
   font-weight: 500;
 }
+
+
+/* Make the About heading span the full section width */
+.about-section .section-heading {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+.about-section .section-heading h2 {
+  width: 100%;
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  text-align: center;
+}
+
+/* Allow wrapping on smaller screens to prevent overflow */
+@media (max-width: 768px) {
+  .about-section .section-heading h2 {
+    white-space: normal;
+    font-size: 1.8rem;
+  }
+}
