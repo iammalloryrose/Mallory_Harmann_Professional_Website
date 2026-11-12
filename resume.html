@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mallory Harmann's professional resume, including GIS, geoscience, technical operations, research, and leadership experience.">
+  <title>Resume | Mallory Harmann</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .resume-page{max-width:1000px;margin:0 auto;padding:58px 28px 80px}
+    .resume-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:30px}
+    .resume-top h1{font:800 clamp(2rem,4vw,3rem)/1.1 'Manrope',sans-serif;color:var(--navy);margin:0 0 8px}
+    .resume-top p{margin:0;color:var(--muted)}
+    .resume-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .resume-actions .button{cursor:pointer}
+    .resume-block{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 30px;margin:18px 0;box-shadow:0 7px 22px rgba(16,36,58,.035)}
+    .resume-block h2{font:800 1.15rem 'Manrope',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid var(--line);padding-bottom:10px;margin:0 0 16px}
+    .resume-block p{margin:0 0 10px;color:#425365}
+    .resume-skills{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+    .resume-skills p{margin:0}
+    .resume-job{margin:0 0 23px}
+    .resume-job:last-child{margin-bottom:0}
+    .resume-job h3{font:700 1rem 'Manrope',sans-serif;color:var(--navy);margin:0}
+    .resume-job .role{font-weight:600;color:#536679;margin:2px 0 9px}
+    .resume-job ul{margin:8px 0 0;padding-left:21px;color:#425365}
+    .resume-job li{margin:0 0 6px;padding-left:3px}
+    .resume-education h3{font:700 1rem 'Manrope',sans-serif;color:var(--navy);margin:13px 0 2px}
+    .resume-education h3:first-child{margin-top:0}
+    .resume-education p{margin:0}
+    @media(max-width:650px){.resume-page{padding:38px 18px}.resume-top{flex-direction:column}.resume-block{padding:21px 19px}.resume-skills{grid-template-columns:1fr}}
+    @media print{
+      @page{size:letter;margin:.55in}
+      body{background:#fff!important;color:#111!important;font-size:9.5pt;line-height:1.42}
+      .site-header,.site-footer,.resume-actions{display:none!important}
+      .resume-page{max-width:none;padding:0}
+      .resume-top{margin-bottom:14px}
+      .resume-top h1{font-size:23pt}
+      .resume-block{box-shadow:none;border:0;border-radius:0;padding:10px 0;margin:0;break-inside:avoid}
+      .resume-block h2{font-size:11pt;margin-bottom:8px}
+      .resume-job{break-inside:avoid;margin-bottom:13px}
+      .resume-job li{margin-bottom:3px}
+      a{color:inherit;text-decoration:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Mallory Harmann home">MH<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#webgis">WebGIS</a>
+        <a href="index.html#programming">GIS Programming</a>
+        <a href="index.html#research">Research</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="resume-page">
+    <div class="resume-top">
+      <div>
+        <p class="eyebrow">Professional background</p>
+        <h1>Mallory Harmann</h1>
+        <p>Geoscience • Geographic Information Science • Technical Operations</p>
+      </div>
+      <div class="resume-actions">
+        <a class="button button-outline" href="index.html">Back to portfolio</a>
+        <button class="button button-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </div>
+
+    <section class="resume-block">
+      <h2>Professional Summary</h2>
+      <p>Geoscience and Geographic Information Science professional with experience in geospatial analysis, environmental research, CAD drafting, technical operations, and large-scale event coordination. Skilled in GIS applications, spatial data visualization, programming, environmental instrumentation, and technical documentation. Experienced in translating complex data and digital site plans into practical solutions, coordinating cross-functional projects, and managing personnel and operational resources. Former U.S. Navy Aviation Electronics Technician with a background in technical troubleshooting, systems maintenance, team leadership, and operational planning.</p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Technical Skills</h2>
+      <div class="resume-skills">
+        <p><strong>GIS &amp; Geospatial Analysis:</strong> ArcGIS, QGIS, QField, Google Earth, spatial analysis, geospatial data visualization, Surfer</p>
+        <p><strong>CAD &amp; Technical Planning:</strong> CAD drafting, scaled site planning, dimensional layouts, infrastructure planning, technical documentation</p>
+        <p><strong>Programming &amp; Data Management:</strong> Python, Java, R, HTML, CSS, Microsoft Excel, database management, object-oriented programming</p>
+        <p><strong>Environmental &amp; Geophysical Equipment:</strong> EM-38 electromagnetic conductivity meter, ground-penetrating radar (GPR), soil augers, sonic drilling equipment, pH meters, electrical conductivity sensors</p>
+        <p><strong>Laboratory &amp; Research:</strong> Soil particle-size analysis, groundwater sampling, water-quality testing, environmental data collection, laboratory safety protocols</p>
+        <p><strong>Technical &amp; Operational:</strong> Electronic troubleshooting, technical diagnostics, inventory management, Canva, commercial printing, personnel coordination, event logistics</p>
+      </div>
+    </section>
+
+    <section class="resume-block">
+      <h2>Professional Experience</h2>
+      <article class="resume-job">
+        <h3>AMIGO AIRSHO | El Paso, Texas</h3>
+        <p class="role">Event Operations Coordinator | August 2026 – Present</p>
+        <p><strong>CAD Drafting, Site Planning &amp; Infrastructure Coordination</strong></p>
+        <ul>
+          <li>Develop detailed, scaled CAD site plans for a mile-long airfield, translating digital layouts into precise real-world configurations for large-scale event operations.</li>
+          <li>Design and coordinate placement of aircraft displays, tents, seating arrangements, temporary structures, and other event installations while accounting for spatial measurements and operational requirements.</li>
+          <li>Reference aircraft placement manuals and operational guidelines to incorporate required safety clearances and spacing around static aircraft displays.</li>
+          <li>Translate technical site drawings into actionable field layouts, ensuring designated locations and measurements are accurately implemented on-site.</li>
+          <li>Lead coordination meetings regarding event perimeter infrastructure, including fencing configurations, traffic cone quantities, and placement throughout the airfield.</li>
+          <li>Collaborate with cross-functional planning teams to coordinate site infrastructure, space allocation, and operational requirements.</li>
+        </ul>
+        <p><strong>Personnel, Volunteer &amp; Credential Coordination</strong></p>
+        <ul>
+          <li>Coordinate volunteer scheduling, personnel assignments, and workforce organization to support event preparation and operational requirements.</li>
+          <li>Maintain personnel databases, volunteer records, and assignment lists to facilitate workforce tracking and administrative coordination.</li>
+          <li>Support personnel check-in procedures and coordinate staff communications to ensure volunteers and event personnel receive relevant information and assignments.</li>
+          <li>Prepare, organize, package, and distribute event credentials for performers, volunteers, staff, and other event personnel.</li>
+          <li>Coordinate credential distribution to ensure appropriate personnel receive the identification and access materials required for event operations.</li>
+          <li>Assist with logistical preparation and resource organization supporting event participants, site preparation, and field operations.</li>
+        </ul>
+        <p><strong>Administrative, Executive &amp; Office Operations</strong></p>
+        <ul>
+          <li>Provide administrative support across executive and operational departments, including telephone communications, correspondence management, and departmental coordination.</li>
+          <li>Review, prioritize, and route incoming correspondence and communications to appropriate Vice Presidents and departments.</li>
+          <li>Organize and maintain extensive digital records, shared files, and Excel spreadsheets supporting administrative functions and event planning.</li>
+          <li>Participate in cross-departmental planning meetings, facilitating communication and coordination of operational priorities.</li>
+        </ul>
+        <p><strong>Graphic Design, Printing &amp; Production</strong></p>
+        <ul>
+          <li>Design professional event graphics, layouts, and organizational materials using Canva.</li>
+          <li>Operate and troubleshoot commercial office printing equipment to produce high-volume and large-format print materials.</li>
+          <li>Coordinate print production schedules, organize print jobs, and manage production materials to ensure accuracy and timely completion.</li>
+          <li>Coordinate the ordering and production of event wristbands and other identification materials.</li>
+        </ul>
+      </article>
+
+      <article class="resume-job">
+        <h3>UNIVERSITY OF TEXAS AT EL PASO (UTEP)</h3>
+        <p class="role">Undergraduate Research Assistant | December 2023 – September 2024</p>
+        <ul>
+          <li>Conducted field research involving electromagnetic conductivity measurements using an EM-38 instrument to evaluate soil properties and support environmental research.</li>
+          <li>Collected and analyzed soil samples using laboratory particle-size distribution procedures to assess soil texture and physical characteristics.</li>
+          <li>Operated laboratory instrumentation, including pH meters and electrical conductivity equipment, while adhering to established laboratory safety procedures.</li>
+          <li>Analyzed and visualized more than 40,000 spatial data points using Surfer software to identify and map variations in soil properties and electrical conductivity.</li>
+          <li>Collected soil core samples using augers and sonic drilling equipment while maintaining sample integrity in field environments, including agricultural settings.</li>
+          <li>Performed well-water sampling and water-quality assessments using pH and electrical conductivity measurements.</li>
+        </ul>
+      </article>
+
+      <article class="resume-job">
+        <h3>UTEP COURI MERITUS PROGRAM</h3>
+        <p class="role">Undergraduate Research Assistant | September 2022 – December 2023</p>
+        <ul>
+          <li>Participated in interdisciplinary environmental science and geological research investigating soil characteristics, CO₂, and ecological health.</li>
+          <li>Assisted with environmental data collection, research activities, analysis, and interpretation.</li>
+          <li>Presented research findings at two professional symposia at UTEP, communicating scientific results and contributing to discussions on environmental sustainability.</li>
+        </ul>
+      </article>
+
+      <article class="resume-job">
+        <h3>RSCH ENTERPRISES</h3>
+        <p class="role">Inventory &amp; IT Manager | September 2019 – March 2023</p>
+        <ul>
+          <li>Managed inventory records and product tracking using Square, improving inventory accuracy and reducing discrepancies through effective data management.</li>
+          <li>Diagnosed, troubleshot, and repaired computer systems and point-of-sale equipment to maintain business operations.</li>
+          <li>Designed, developed, and maintained the company's website using Weebly to support customer engagement and online business visibility.</li>
+          <li>Supported daily technical operations, inventory management, and information technology needs.</li>
+        </ul>
+      </article>
+
+      <article class="resume-job">
+        <h3>UNITED STATES NAVY</h3>
+        <p class="role">Aviation Electronics Technician, Petty Officer Third Class | March 2011 – March 2015</p>
+        <ul>
+          <li>Diagnosed, troubleshot, and repaired aircraft electronic assemblies and in-flight navigation systems, improving equipment reliability and reducing repair time by 15%.</li>
+          <li>Analyzed complex electrical circuit schematics and performed component-level troubleshooting to identify and resolve electronic system failures.</li>
+          <li>Maintained and tested aircraft radar systems, tactical displays, and communication systems using multimeters, oscilloscopes, and signal analyzers.</li>
+          <li>Coordinated and led maintenance teams in completing technical repairs, promoting operational readiness, and meeting maintenance deadlines.</li>
+          <li>Served as a Training Petty Officer, supporting the development, instruction, and training of fellow personnel.</li>
+          <li>Served as a Morale, Welfare, and Recreation (MWR) representative, supporting personnel engagement and organizational activities.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="resume-block resume-education">
+      <h2>Education</h2>
+      <h3>TEXAS A&amp;M UNIVERSITY</h3>
+      <p>Master of Geoscience, Geographic Information Science and Technology (GIS&amp;T) | May 2026</p>
+      <p><strong>Relevant Coursework:</strong> Applications in GIS, GIS Programming, Web GIS, Remote Sensing</p>
+      <h3>UNIVERSITY OF TEXAS AT EL PASO</h3>
+      <p>Bachelor of Science in Geological Sciences | August 2024</p>
+      <p><strong>Relevant Coursework:</strong> Hydrology, Structural Geology, Sedimentology and Stratigraphy, Igneous and Metamorphic Petrology, Mineralogy, Geological Processes, Geo-forensics, Database Management, Data Structures, Object-Oriented Programming, Discrete Mathematics</p>
+      <h3>EL PASO COMMUNITY COLLEGE</h3>
+      <p>Associate of Arts in Computer Science | August 2019</p>
+    </section>
+
+    <section class="resume-block">
+      <h2>Community Involvement</h2>
+      <article class="resume-job">
+        <h3>BORDERLAND CENTER</h3>
+        <p class="role">Community Volunteer | September 2024 – Present</p>
+        <ul>
+          <li>Assist in planning and executing special events, holiday programs, and community activities.</li>
+          <li>Support food pantry operations serving approximately 400 individuals weekly through food distribution, inventory restocking, and resource organization.</li>
+          <li>Engage with diverse community members to facilitate access to community resources and services.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="resume-block">
+      <h2>Leadership &amp; Professional Activities</h2>
+      <ul>
+        <li>Training Petty Officer, United States Navy | March 2013 – March 2015</li>
+        <li>Morale, Welfare, and Recreation Representative, United States Navy | September 2012 – March 2015</li>
+        <li>Earth Day at UTEP | April 2022</li>
+        <li>Women in Cybersecurity Club, UTEP | September 2020 – 2021</li>
+        <li>Association for Computing Machinery (ACM), UTEP | September 2019 – 2021</li>
+        <li>ACM-W, UTEP | September 2019 – 2021</li>
+        <li>Military Student Association, UTEP | September 2019 – 2021</li>
+        <li>Society for Industrial and Applied Mathematics | September 2019 – 2021</li>
+        <li>ACM Computer Science Club, EPCC | September 2018 – August 2019</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mallory Harmann</p>
+    <p><a href="index.html">Return to GIS portfolio</a></p>
+  </footer>
+</body>
+</html>
