@@ -13,3 +13,19 @@ body:not(:has(.hero))>header{max-width:1180px;margin:0 auto;background:var(--nav
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:32px;padding-top:65px}.hero-panel{max-width:620px}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.research-grid,.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{gap:28px}}
 @media(max-width:620px){.header-inner{align-items:flex-start;flex-direction:column;padding:14px 20px;gap:8px}.site-header nav{gap:8px 15px}.site-header nav a{font-size:.78rem}.hero{padding:54px 22px}.section{padding:56px 20px}.section-heading-row{align-items:flex-start;flex-direction:column}.about-grid{grid-template-columns:1fr}.project-grid,.research-grid,.skills-grid{grid-template-columns:1fr}.repo-strip{align-items:flex-start;flex-direction:column}.education-list>div{grid-template-columns:1fr;gap:4px}.site-footer{flex-direction:column;padding:20px}.hero h1{font-size:2.65rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+project-image {
+  width: 100%;
+  max-width: 950px;
+  margin: 25px auto 35px;
+  text-align: center;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
