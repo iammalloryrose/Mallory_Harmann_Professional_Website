@@ -36,6 +36,7 @@ project-image {
 }
 
 .profile-photo {
+  display: block;
   width: 190px;
   height: 220px;
   object-fit: cover;
