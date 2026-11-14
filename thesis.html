@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mallory Harmann's Master of Geoscience thesis: a GIS-based assessment of socio-hydrologic vulnerability in census tracts of El Paso County, Texas.">
+  <title>Master's Thesis | Mallory Harmann</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thesis-page{max-width:1100px;margin:0 auto;padding:58px 28px 80px}
+    .thesis-top{max-width:880px;margin-bottom:28px}
+    .thesis-top h1{font:800 clamp(1.8rem,3.6vw,2.7rem)/1.15 'Manrope',sans-serif;letter-spacing:-.04em;color:var(--navy);margin:0 0 12px}
+    .thesis-meta{margin:0;color:var(--muted)}
+    .thesis-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 0}
+    .thesis-actions .button-primary{background:var(--navy);color:#fff}
+    .thesis-block{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 30px;margin:18px 0}
+    .thesis-block h2{font:800 1.15rem 'Manrope',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid var(--line);padding-bottom:10px;margin:0 0 16px}
+    .thesis-block p{margin:0 0 12px;color:#425365}
+    .thesis-indices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .thesis-indices div{padding:16px;border-radius:10px;background:#f4f7f8;border:1px solid #e5ebee}
+    .thesis-indices strong{display:block;font:700 .98rem 'Manrope',sans-serif;color:var(--navy)}
+    .thesis-indices small{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+    .thesis-findings{margin:0;padding-left:21px;color:#425365}
+    .thesis-findings li{margin:0 0 8px}
+    .pdf-viewer{display:block;width:100%;height:85vh;min-height:620px;border:1px solid var(--line);border-radius:10px}
+    .pdf-fallback{padding:28px;text-align:center}
+    @media(max-width:900px){.thesis-indices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:650px){.thesis-page{padding:38px 18px}.thesis-indices{grid-template-columns:1fr}.pdf-viewer{height:70vh;min-height:480px}}
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Mallory Harmann home">MH<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="thesis.html" aria-current="page">Thesis</a>
+        <a href="index.html#webgis">WebGIS</a>
+        <a href="index.html#programming">GIS Programming</a>
+        <a href="index.html#research">Research</a>
+        <a href="resume.html">Resume</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thesis-page" id="main">
+    <div class="thesis-top">
+      <p class="eyebrow">Master's Thesis · Texas A&amp;M University</p>
+      <h1>A GIS-Based Assessment of Socio-Hydrologic Vulnerability in Census Tracts of El Paso County, Texas</h1>
+      <p class="thesis-meta">Mallory Harmann · Master of Geoscience, GIS &amp; Technology emphasis · May 2026</p>
+      <div class="thesis-actions">
+        <a class="button button-primary" href="#thesis-pdf">Read the thesis ↓</a>
+        <a class="button button-outline" href="documents/Harmann_Masters_Thesis.pdf" target="_blank" rel="noopener noreferrer">Open PDF in new tab ↗</a>
+        <a class="button button-outline" href="documents/Harmann_Masters_Thesis.pdf" download>Download PDF</a>
+        <a class="button button-outline" href="index.html">Back to portfolio</a>
+      </div>
+    </div>
+
+    <section class="thesis-block">
+      <h2>Abstract</h2>
+      <p>This study examines how water-related vulnerability is distributed across census tracts in El Paso County, Texas, using a GIS-based framework that brings together social, hydraulic, and environmental data. The region is a useful case study because of its arid climate, reliance on groundwater, and location along the U.S.–Mexico border, where rapid population growth and infrastructure limitations intersect with environmental stress.</p>
+      <p>Four indices were constructed: a Social Vulnerability Index, a Hydrologic Exposure Index, a Water Vulnerability Index, and an Environmental Pressure Index. All variables were standardized and combined using a weighted approach to allow direct comparison across tracts. Global Moran's I confirmed strong spatial clustering for every index, with the highest vulnerability concentrated in urban core tracts near the border where social disadvantage and environmental exposure overlap.</p>
+    </section>
+
+    <section class="thesis-block">
+      <h2>Four indices</h2>
+      <div class="thesis-indices">
+        <div><strong>SVI</strong><small>Social Vulnerability Index: median household income (inverted), population density, Hispanic population proportion</small></div>
+        <div><strong>HEI</strong><small>Hydrologic Exposure Index: FEMA flood exposure, river proximity, groundwater well density</small></div>
+        <div><strong>WVI</strong><small>Water Vulnerability Index: weighted combination of SVI and HEI</small></div>
+        <div><strong>EPI</strong><small>Environmental Pressure Index: NLCD land cover risk and inverted elevation from a DEM</small></div>
+      </div>
+    </section>
+
+    <section class="thesis-block">
+      <h2>Methods &amp; findings</h2>
+      <ul class="thesis-findings">
+        <li>Min–max normalization and weighted combination of census, FEMA, TWDB, NLCD, USGS elevation, and hydrography data at the census-tract scale.</li>
+        <li>Global Moran's I (z-scores of roughly 36.6 to 42.9, p &lt; 0.001) and Getis-Ord Gi* hot spot analysis identified significant clusters of high and low vulnerability.</li>
+        <li>Hot spots concentrate in the central and southeastern urban areas along the river; cold spots appear in the northern and outer parts of the county.</li>
+        <li>A WVI − SVI difference analysis shows social conditions acting as the baseline of vulnerability, with hydrologic exposure amplifying risk in specific flood-prone and river-adjacent locations.</li>
+        <li>Findings support differentiated planning: broad social investment where social vulnerability dominates, and targeted flood or groundwater management where hydrologic exposure matters most.</li>
+      </ul>
+    </section>
+    
+  <section class="thesis-block" id="thesis-pdf">
+      <h2>Full thesis (PDF)</h2>
+      <object class="pdf-viewer" data="documents/Harmann_Masters_Thesis.pdf#view=FitH" type="application/pdf" aria-label="Master's thesis PDF">
+        <div class="pdf-fallback">
+          <p>Your browser can't display the PDF inline, which is common on phones and tablets.</p>
+          <p><a class="button button-outline" href="documents/Harmann_Masters_Thesis.pdf" target="_blank" rel="noopener noreferrer">Open the thesis PDF ↗</a></p>
+        </div>
+      </object>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mallory Harmann</p>
+    <p><a href="index.html">Return to GIS portfolio</a></p>
+  </footer>
+</body>
+</html>
